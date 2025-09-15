@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-purple {
+    color: #b47ed6 !important;
+}
+
+.bg-purple {
+    background-color: #b47ed6;
+}
+
+.btn-purple {
+    background-color: #b47ed6;
+    border: none;
+    color: #fff;
+}
+
+.btn-purple:hover {
+    background-color: #a065c9;
+}
+
+/* Navbar Styles */
+.custom-navbar {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #fff !important;
+    background-color: #b47ed6;
+    border: 2px solid #b47ed6;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Hero Section */
+.text-start {
+    margin-right: 400px;
+}
+
+.bg-dark-blue {
+    background-color: #00274d;
+    border: none;
+    border-radius: 10px;
+}
+
+.brand-bordered {
+    border: 2px solid #fcfcfc !important;
+    padding: 5px 10px;
+    border-radius: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    padding: 20px 50px;
+}
+
+footer .text-purple {
+    color: #b47ed6;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .custom-navbar {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .text-start {
+        margin-right: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .text-start {
+        margin-right: 100px;
+    }
+
+    .btn-purple + .text-decoration-none {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+
+    .text-start {
+        margin-right: 0;
+    }
+
+    .bg-dark-blue {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer .text-purple {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .btn-purple + .text-decoration-none {
+        margin-left: 0;
+    }
+
+    .bg-dark-blue {
+        padding: 20px;
+    }
+}
